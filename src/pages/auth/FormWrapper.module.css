@@ -1,0 +1,14 @@
+.contianer{
+    height: 100vh;
+    width: screen;
+    padding: 20px 80px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.formItem{
+    margin-bottom: 0px !important;
+}

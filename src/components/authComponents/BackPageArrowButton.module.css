@@ -1,0 +1,12 @@
+.leftOutlinedArrow {
+    margin-right: var(--margin-top-24);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    height: 40px;
+    width: 40px;
+}
+
+.leftOutlinedArrow:hover {
+    background-color: rgb(235, 232, 232);
+}
