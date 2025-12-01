@@ -21,8 +21,8 @@ const SignUpComponent = () => {
             };
 
             const res = await Axios.post("https://pmg.engineering/apis/signup/", payload);
-
             if (res.status === 201) {
+                localStorage.setItem("user_id", res.data.user_id);
                 navigate("/auth/almost-there");
             }
         } catch (error) {
