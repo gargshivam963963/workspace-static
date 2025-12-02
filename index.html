@@ -11,6 +11,14 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const deepLink = params.get("link");   // or deep_link_id
+
+    if (deepLink) {
+      window.location.href = "myapp://verify" + window.location.pathname;
+    }
+  </script>
 </body>
 
 </html>
